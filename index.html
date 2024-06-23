@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/order.css" />
+    <title>הרשם למשחק</title>
+    <script>
+        window.addEventListener('load', function() {
+            
+               document.querySelector('#name').focus();
+               console.log(document.querySelector('#name'),"aaa");
+               
+           
+        });
+
+        function saveInStorage()
+        {
+           var firstName = document.getElementById("name").value;
+           var lastName = document.getElementById("lastName").value;
+            localStorage.setItem("name",firstName);
+            localStorage.setItem("lastName",lastName);
+           
+        }
+    </script>
+</head>
+<body>
+
+    <div class="root-game"><div class="h-full ">
+       
+            <div class="flex-1 w-full sm:text-base text-sm"><h1 class="text-center sm:text-3xl text-2xl rtl">איך לשחק?</h1>
+                <ul class="list-disc pl-5 block sm:text-base text-sm"><li class="mt-6 mb-2 rtl">יש לך 6 ניחושים לנחש את המילה הנכונה.</li>
+                    <li class="mb-2 rtl">אפשר לנחש כל מילה שמופיעה ברשימת המילים של המשחק.</li>
+                    <li class="mb-2 rtl">אחרי כל ניחוש, כל אות תיצבע בירוק, צהוב או אדום.</li>
+                </ul>
+                <div class="mb-3 mt-8 flex items-center rtl">
+                    <span class="circle green">א</span>
+                    <span class="mx-2">=</span><span>אות נכונה, במיקום הנכון.</span></div><div class="mb-3 rtl">
+                        <span class="circle yellow">א</span>
+                        <span class="mx-2">=</span><span>אות נכונה, במיקום לא נכון.</span></div><div class="mb-3 rtl">
+                            <span class="circle red">א</span>
+                            <span class="mx-2">=</span><span>האות לא מופיעה במילה.</span></div></div>
+
+
+    <form class="form" onsubmit="saveInStorage()" action="html/game.html">
+        <input type="text" name="name" placeholder="שם פרטי"id="name">
+        <input type="text" name="lastname" placeholder="שם משפחה" id="lastName">
+        <div>
+        <button type="submit" name="submit" id="button" class="begin">להתחלת המשחק לחץ כאן</button>
+    </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../css/style.css" />
+    <script src="../scripts/game.js"></script>
+    <script src="../scripts/timer.js"></script>
+</head>
+<body onload="addKeyboardListener()">
+  <div>
+
+    <dialog  id="finalGame" >
+        <div id="msg"></div>
+        <button onclick="reload()" class="begin">למשחק חדש לחץ כאן</button>
+     
+    </dialog>
+  </div>
+  <div class="root-game">
+    <h1>מה במילה</h1>
+      <div><span id="time"></span></div>
+    <button  class="begin" onclick="play_game()">התחל</button>
+ 
+    <div id="root">
+      <span id="key03"></span>
+      <span id="key02"></span>
+      <span id="key01"></span>
+      <span id="key00"></span>
+    </div>
+    <div id="root">
+      <span id="key17" ></span>
+      <span id="key16"></span>
+      <span id="key15"></span>
+      <span id="key14"></span>
+    </div>
+    <div id="root">
+      <span id="key211" ></span>
+      <span id="key210"></span>
+      <span id="key29"></span>
+      <span id="key28"></span>
+    </div>
+    <div id="root">
+      <span id="key315" ></span>
+      <span id="key314"></span>
+      <span id="key313"></span>
+      <span id="key312"></span>
+    </div>
+    <div class="">
+      <div class="">
+          <button class="keyboard" class="keyboard"><div class="">ק</div></button>
+          <button class="keyboard" class=""><div class="">ר</div></button><button class="keyboard" class=""><div class="">א</div></button><button class="keyboard" class=""><div class="">ט</div></button><button class="keyboard" class=""><div class="">ו</div></button><button class="keyboard" class=""><div class="">ן</div></button><button class="keyboard" class=""><div class="">ם</div></button><button class="keyboard" class=""><div class="">פ</div></button>
+      </div><div class="">
+          <button class="keyboard" class=""><div class="">ש</div></button><button class="keyboard" class=""><div class="">ד</div></button><button class="keyboard" class=""><div class="">ג</div></button><button class="keyboard" class=""><div class="">כ</div></button><button class="keyboard" class=""><div class="">ע</div></button><button class="keyboard" class="">
+              <div class="">י</div>
+          </button><button class="keyboard" class=""><div class="">ח</div></button><button class="keyboard" class=""><div class="">ל</div></button><button class="keyboard" class=""><div class="">ך</div></button><button class="keyboard" class=""><div class="">ף</div></button>
+      </div><div class="">
+          <button class="Enter" id="enter" disabled>ENTER</button><button class="keyboard" class=""><div class="">ז</div></button><button class="keyboard" class=""><div class="">ס</div></button><button class="keyboard" class="">
+              <div class="">ב</div>
+          </button><button class="keyboard" class=""><div class="">ה</div></button><button class="keyboard" class="">
+              <div class="">נ</div>
+          </button><button class="keyboard" class=""><div class="">מ</div></button><button class="keyboard" class=""><div class="">צ</div></button>
+          <button class="keyboard" class=""><div class="">ת</div></button><button class="keyboard" class=""><div class="">ץ</div>
+          </button>
+      </div>
+  </div>
+</div>
+    </body>
+</html>

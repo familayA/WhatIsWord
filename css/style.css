@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #333;
+  }
+  
+  button {
+    display: block;
+    margin: 20px auto;
+    padding: 10px 20px;
+    font-size: 18px;
+   
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    display: inline-flex;
+    
+  }
+  
+  .begin
+  {
+    background-color: #007bff;
+  }
+  button.keyboard:hover {
+    background-color: #b30077;
+  }
+
+  .keyboard
+  {
+    display: inline-flex;
+    margin: 0.3em;;
+    background-color: #007bff;
+  }
+  .keyboard:disabled
+  {
+    background-color: darkgray !important;
+  }
+  #enter
+  {
+    background-color: #007bff;
+  }
+  #enter:disabled
+  {
+    background-color: darkgray !important;
+  }
+  
+  .alert {
+    text-align: center;
+    font-size: 20px;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #ffc107;
+    color: #333;
+    border-radius: 5px;
+  }
+
+  span
+  {
+    display: inline-flex;
+    justify-content:center;
+    width: 3em;
+    height: 3em;
+    border-radius: 3em;
+    background-color: white;
+    align-items: center;
+    margin: 0.4em;
+    padding: 0.4em;
+  }
+
+  .notInclude
+  {
+    background-color:red;
+  }
+
+  .bool
+  {
+    background-color:green;
+  }
+  .pgia
+  {
+    background-color:orange;
+  }
+
+  .root-game
+  {
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    
+  }
+
+  .finalDiv
+  {
+    z-index: 9999;
+  }
+
+  
+@media (max-width: 610px) {
+  span
+  {
+    display: inline-flex;
+    justify-content:center;
+    width: 2em;
+    height: 2em;
+    border-radius: 2em;
+    background-color: white;
+    align-items: center;
+    margin: 0.2em;
+    padding: 0.2em;
+  }
+}
